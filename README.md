@@ -27,3 +27,9 @@ A simple RESTful API to manage episodes, guests, and appearances for a late show
 git clone <repository-url>
 cd late_show_api/server
 ```
+2. **Create a Virtual Environment**
+```bash
+python -m venv venv
+source venv/bin/activate   # On Linux/macOS
+venv\Scripts\activate      # On Windows
+```
