@@ -9,3 +9,21 @@ A simple RESTful API to manage episodes, guests, and appearances for a late show
 - Delete an episode with cascading deletion of appearances (`DELETE /episodes/<id>`)  
 - List all guests (`GET /guests`)  
 - Create a new appearance with rating validation (`POST /appearances`)  
+
+## Technologies
+
+- Python 3.8+  
+- Flask  
+- Flask-SQLAlchemy  
+- Flask-Migrate  
+- SQLite (for local development)  
+- SQLAlchemy-Serializer  
+
+## Installation
+
+1. **Clone the repository**
+
+```bash
+git clone <repository-url>
+cd late_show_api/server
+```
