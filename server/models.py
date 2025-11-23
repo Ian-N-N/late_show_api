@@ -20,8 +20,8 @@ class Episode(db.Model, SerializerMixin):
         lazy=True
     )
 
-    # Avoid infinite recursion when serializing; let appearances include guest but
-    # not the reverse nested episodes again.
+    # Avoid infinite recursion when serializing
+    # let appearances include guest but not the reverse nested episodes again.
     serialize_rules = ("-appearances.episode",)
 
     def __repr__(self):
