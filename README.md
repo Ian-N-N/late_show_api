@@ -1,6 +1,27 @@
 # Late Show API
 
 A simple RESTful API to manage episodes, guests, and appearances for a late show. Built with **Flask** and **Flask-SQLAlchemy**, the API allows listing episodes, viewing episode details with nested guest appearances, adding appearances, and deleting episodes. 
+## Folder Structure
+```bash
+.
+├── README.md
+├── __init__.py
+├── instance
+├── migrations
+│   ├── README
+│   ├── alembic.ini
+│   ├── env.py
+│   ├── script.py.mako
+│   └── versions
+├── requirements.txt
+└── server
+    ├── __init__.py
+    ├── app.py
+    ├── instance
+    ├── models.py
+    ├── seed.py
+    └── testing
+```
 
 ## Features
 
@@ -40,5 +61,14 @@ pip install -r requirements.txt
 ```
 4. **Database Seeding**
 ```bash
-
+python seed.py
+# This should be done before running the app so that you create tables with sample data
 ```
+5. **Run the App**
+```bash
+python app.py
+```
+- The API will be available at: http://127.0.0.1:5555/
+- Sample: GET http://127.0.0.1:5555/episodes
+
+
