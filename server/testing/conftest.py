@@ -16,7 +16,7 @@ def app():
         
         db.create_all()
 
-        # seed small data for tests
+    # seed small data for tests
         e1 = Episode(date="1/11/99", number=1)
         e2 = Episode(date="1/12/99", number=2)
         db.session.add_all([e1, e2])

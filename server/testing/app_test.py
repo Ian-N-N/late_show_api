@@ -25,12 +25,12 @@ def test_get_episode_not_found(client):
     assert data["error"] == "Episode not found"
 
 def test_delete_episode(client):
-    # create a new episode to delete
+# create a new episode to delete
     post_res = client.post("/appearances", json={"rating":4, "episode_id":2, "guest_id":1})
-    # Now delete episode 2
+# Now delete episode 2
     res = client.delete("/episodes/2")
     assert res.status_code == 204
-    # verify episode removed
+# verify episode removed
     get_res = client.get("/episodes/2")
     assert get_res.status_code == 404
 
