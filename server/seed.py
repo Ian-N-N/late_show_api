@@ -1,6 +1,6 @@
 # server/seed.py
-from app import create_app
-from models import db, Episode, Guest, Appearance
+from server.app import create_app
+from server.models import db, Episode, Guest, Appearance
 
 app = create_app()
 

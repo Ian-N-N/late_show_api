@@ -1,7 +1,7 @@
 # server/testing/conftest.py
 import pytest
-from app import create_app
-from models import db, Episode, Guest, Appearance
+from server.app import create_app
+from server.models import db, Episode, Guest, Appearance
 
 @pytest.fixture
 def app():
@@ -13,7 +13,7 @@ def app():
     })
 
     with app.app_context():
-        db.init_app(app)
+        
         db.create_all()
 
         # seed small data for tests

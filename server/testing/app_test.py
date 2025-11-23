@@ -1,6 +1,6 @@
 # server/testing/app_test.py
 import json
-from models import db, Episode, Guest, Appearance
+from server.models import db, Episode, Guest, Appearance
 
 def test_get_episodes(client):
     res = client.get("/episodes")

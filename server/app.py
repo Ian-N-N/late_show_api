@@ -1,7 +1,7 @@
 # server/app.py
 from flask import Flask, request, jsonify
 from flask_migrate import Migrate
-from models import db, Episode, Guest, Appearance
+from server.models import db, Episode, Guest, Appearance
 
 def create_app():
     app = Flask(__name__)
