@@ -36,5 +36,9 @@ venv\Scripts\activate      # On Windows
 3. **Install the Dependencies**
 ```bash
 pip install -r requirements.txt
+# Ensure requirements.txt pins SQLAlchemy<2.0 to avoid deprecation issues.
 ```
-4. 
+4. **Database Seeding**
+```bash
+
+```
