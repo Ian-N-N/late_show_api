@@ -71,4 +71,7 @@ python app.py
 - The API will be available at: http://127.0.0.1:5555/
 - Sample: GET http://127.0.0.1:5555/episodes
 
+## Author
+Name: Ian Ngoru Njuguna
+Email: njugunaian65@gmail.com 
 
